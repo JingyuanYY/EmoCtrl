@@ -117,7 +117,7 @@ Fig 3. Comparison with state-of-the-art methods, showing EmoCtrl is superior in 
 
 
 ### Quantitative Results
-
+<div align="center">
 Table 1. Comparisons with four categories of state-of-the-art methods across five evaluation metrics.
 
 |     Method      |    Emo-A ↑    |    CLIP-A↑    |    EC-A ↑     |   LPIPS ↑    |   Sem-C ↑    |
@@ -132,16 +132,20 @@ Table 1. Comparisons with four categories of state-of-the-art methods across fiv
 |     EmoGen      | <u>45.23%</u> |    43.42%     |    14.97%     | <u>0.701</u> |    0.539     |
 |  EmotiCrafter   |    24.67%     |    82.73%     |    20.23%     |    0.485     |    0.563     |
 |     EmoCtrl     |  **64.64%**   |    83.06%     |  **50.99%**   |    0.699     |  **0.673**   |
+</div>
 
+<div align="center">
 Table 2. User preference study. The numbers indicate the percentage of participants who vote for the result.
 
 | Method |  Emotion evoking↑   |  Content fidelity↑   |      Balance↑       |
 | :----: | :-----------------: | :------------------: | :-----------------: |
-|  SDXL  |   0.94$\pm$2.82%    |    1.35$\pm$4.56%    |   1.15$\pm$3.60%    |
-|   TI   |   5.05$\pm$4.19%    |    6.46$\pm$5.75%    |   5.76$\pm$4.41%    |
-| EmoGen |   5.21$\pm$4.53%    |    5.42$\pm$4.34%    |   5.31$\pm$4.20%    |
-|  Ours  | **88.75$\pm$8.88%** | **86.77$\pm$11.81%** | **87.76$\pm$9.76%** |
+|  SDXL  |   0.94±2.82%    |    1.35±4.56%    |   1.15±3.60%    |
+|   TI   |   5.05±4.19%    |    6.46±5.75%    |   5.76±4.41%    |
+| EmoGen |   5.21±4.53%    |    5.42±4.34%    |   5.31±4.20%    |
+|  Ours  | **88.75±8.88%** | **86.77±11.81%** | **87.76±9.76%** |
+</div>
 
+<div align="center">
 Table 3. Ablation of EmoCtrl. Baseline is the original Stable Diffusion. v<sub>t</sub> and v<sub>v</sub> denote the textual and visual emotion tokens, respectively, while EDPO stands for Emotion-driven Preference Optimization.
 
 |      Setting      |    Emo-A ↑    |    CLIP-A↑    |    EC-A ↑     |   LPIPS ↑    |   Sem-C ↑    |
@@ -151,28 +155,28 @@ Table 3. Ablation of EmoCtrl. Baseline is the original Stable Diffusion. v<sub>t
 | w/o v<sub>v</sub> |  **65.30%**   |    82.24%     | <u>50.33%</u> |    0.693     | <u>0.672</u> |
 |     w/o EDPO      | <u>64.64%</u> |    80.92%     |    49.34%     |  **0.703**   |    0.658     |
 |      EmoCtrl      | <u>64.64%</u> |    83.06%     |  **50.99%**   | <u>0.699</u> |  **0.673**   |
+</div>
 
 
 
 
-
-<center>
+<p align='center'>
     <img src="docs/result-2.png" width="600px"/> <br>
     Fig 4. Ablation study of EmoCtrl, showing the contributions of textual emotion tokens (v<sub>t</sub>) and visual emotion tokens (v<sub>v</sub>).
-</center>
+</p>
 
 
 
-<center>
+<p align='center'>
     <img src="docs/result-3.png" width="1200px"/> <br>
-    Figure 5. Visualization of textual emotion tokens. Each row shows images generated from a specific emotion, while each column reflects diverse semantic expressions. The results show that EmoCtrl produces rich content diversity while maintaining consistent emotional tone.
-</center>
+    Fig 5. Visualization of textual emotion tokens. Each row shows images generated from a specific emotion, while each column reflects diverse semantic expressions. The results show that EmoCtrl produces rich content diversity while maintaining consistent emotional tone.
+</p>
 
 
-<center>
+<p align='center'>
     <img src="docs/result-4.png" width="1200px"/> <br>
-    Fig 5. EmoCtrl can be applied to creative art generation, including (a) style control and (b) multi-emotion condition.
-</center>
+    Fig 6. EmoCtrl can be applied to creative art generation, including (a) style control and (b) multi-emotion condition.
+</p>
 
 
 
