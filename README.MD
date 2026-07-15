@@ -3,7 +3,7 @@
 This is the official implementation of paper "EmoCtrl: Controllable Emotional Image Content Generation".
 
 
-> [Jingyuan Yang](https://jingyuanyy.github.io/), WeiBin Luo, [Hui Huang](https://vcc.tech/~huihuang)<sup>*</sup>
+> [Jingyuan Yang](https://jingyuanyy.github.io/), WeiBin Luo, [Hui Huang](https://vcc.tech/~huihuang)<sup>*</sup>  
 > Shenzhen University
 
 
