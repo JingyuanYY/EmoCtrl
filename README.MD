@@ -2,29 +2,33 @@
 
 This is the official implementation of paper "EmoCtrl: Controllable Emotional Image Content Generation".
 
-> [Jingyuan Yang](https://jingyuanyy.github.io/)<sup>1</sup>, WeiBin Luo<sup>1</sup>, [Hui Huang](https://vcc.tech/~huihuang)<sup>1</sup><sup>*</sup> 
-> <sup>1</sup>Shenzhen University
+
+> [Jingyuan Yang](https://jingyuanyy.github.io/), WeiBin Luo, [Hui Huang](https://vcc.tech/~huihuang)<sup>*</sup>
+> Shenzhen University
+
 
 [![arXiv](https://img.shields.io/badge/arXiv-2512.22437-b31b1b.svg)](https://arxiv.org/abs/2512.22437)
 
 <p align="left">
 <img src="docs/teaser.png" width="1200px"/>  
 <br>
-Fig 1. Controllable Emotional Image Content Generation with EmoCtrl. Given a content condition (“Ocean” ) and a target emotion (“Contentment” ), EmoCtrl generates images that maintain semantic content while vividly expressing accurate emotions.
+Fig 1. Controllable Emotional Image Content Generation with EmoCtrl. Given a content condition (“Ocean”) and a target emotion (“Contentment”), EmoCtrl generates images that maintain semantic content while vividly expressing accurate emotions.
 </p>
+
+
 ## Preliminary
 
 Download the pre-trained weights required for the program to run.
 
-Qwen3-0.6B: [通义千问3-0.6B · 模型库](https://www.modelscope.cn/models/Qwen/Qwen3-0.6B/summary)
+Qwen3-0.6B: [Qwen3-0.6B · 模型库](https://www.modelscope.cn/models/Qwen/Qwen3-0.6B/summary)
 
 SDXL: [stable-diffusion-xl-base-1.0 · 模型库](https://www.modelscope.cn/models/stabilityai/stable-diffusion-xl-base-1.0/summary)
 
 If you want to train your own model, you need to download both datasets.
 
-EmoSet: [JingyuanYY/EmoSet: This is the official implementation of 2023 ICCV paper "EmoSet: A large-scale visual emotion dataset with rich attributes".](https://github.com/JingyuanYY/EmoSet?tab=readme-ov-file)
+EmoSet: [JingyuanYY/EmoSet](https://github.com/JingyuanYY/EmoSet?tab=readme-ov-file)
 
-EmoEditSet: [JingyuanYY/EmoEdit: This is the official implementation of 2025 CVPR paper "EmoEdit: Evoking Emotions through Image Manipulation".](https://github.com/JingyuanYY/EmoEdit)
+EmoEditSet: [JingyuanYY/EmoEdit](https://github.com/JingyuanYY/EmoEdit)
 
 
 
@@ -109,7 +113,7 @@ python textual_visualization.py
 
 ### Qualitative Results
 
-<p align="center">
+<p align="left">
 <img src="docs/result-1.png" width="1200px"/>  
 <br>
 Fig 3. Comparison with state-of-the-art methods, showing EmoCtrl is superior in both content and emotion aspects.
@@ -134,6 +138,7 @@ Table 1. Comparisons with four categories of state-of-the-art methods across fiv
 |     EmoCtrl     |  **64.64%**   |    83.06%     |  **50.99%**   |    0.699     |  **0.673**   |
 </div>
 
+
 <div align="center">
 Table 2. User preference study. The numbers indicate the percentage of participants who vote for the result.
 
@@ -144,6 +149,7 @@ Table 2. User preference study. The numbers indicate the percentage of participa
 | EmoGen |   5.21±4.53%    |    5.42±4.34%    |   5.31±4.20%    |
 |  Ours  | **88.75±8.88%** | **86.77±11.81%** | **87.76±9.76%** |
 </div>
+
 
 <div align="center">
 Table 3. Ablation of EmoCtrl. Baseline is the original Stable Diffusion. v<sub>t</sub> and v<sub>v</sub> denote the textual and visual emotion tokens, respectively, while EDPO stands for Emotion-driven Preference Optimization.
@@ -159,7 +165,6 @@ Table 3. Ablation of EmoCtrl. Baseline is the original Stable Diffusion. v<sub>t
 
 
 
-
 <p align='center'>
     <img src="docs/result-2.png" width="600px"/> <br>
     Fig 4. Ablation study of EmoCtrl, showing the contributions of textual emotion tokens (v<sub>t</sub>) and visual emotion tokens (v<sub>v</sub>).
@@ -167,13 +172,13 @@ Table 3. Ablation of EmoCtrl. Baseline is the original Stable Diffusion. v<sub>t
 
 
 
-<p align='center'>
+<p align='left'>
     <img src="docs/result-3.png" width="1200px"/> <br>
     Fig 5. Visualization of textual emotion tokens. Each row shows images generated from a specific emotion, while each column reflects diverse semantic expressions. The results show that EmoCtrl produces rich content diversity while maintaining consistent emotional tone.
 </p>
 
 
-<p align='center'>
+<p align='left'>
     <img src="docs/result-4.png" width="1200px"/> <br>
     Fig 6. EmoCtrl can be applied to creative art generation, including (a) style control and (b) multi-emotion condition.
 </p>
